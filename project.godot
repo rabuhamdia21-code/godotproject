@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Moddable Platformer"
+config/name="Moddable Platformer (Copy)"
 config/version="v1.5-66-g4a256bf"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.5", "GL Compatibility")

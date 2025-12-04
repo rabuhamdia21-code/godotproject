@@ -1,20 +1,29 @@
 [gd_scene load_steps=4 format=3 uid="uid://daf24t18h3n5e"]
 
 [ext_resource type="Script" uid="uid://b4j8f10agdcvu" path="res://scripts/coin.gd" id="1_4bks0"]
-[ext_resource type="Texture2D" uid="uid://84t7yee808cn" path="res://assets/items/button.png" id="2_u2mam"]
+[ext_resource type="Texture2D" uid="uid://yo5rgj3a28v3" path="res://scripts/imgbin-emoji-sms-text-messaging-sticker-emoticon-torch-Y80Ria4TPgydMCw6GgMXMUtpV-removebg-preview.png" id="2_u2mam"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5w0o8"]
-radius = 46.72
+radius = 143.69136
 
 [node name="Coin" type="Area2D" groups=["coins"]]
+scale = Vector2(27.316938, 28.36944)
 collision_layer = 2
 script = ExtResource("1_4bks0")
+texture = ExtResource("2_u2mam")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 unique_name_in_owner = true
+scale = Vector2(0.5431406, 0.5431406)
+texture = ExtResource("2_u2mam")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-7953.2114, 22614.063)
+scale = Vector2(0.15449019, 0.16496931)
 texture = ExtResource("2_u2mam")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.7205505, -4.3004026)
 shape = SubResource("CircleShape2D_5w0o8")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

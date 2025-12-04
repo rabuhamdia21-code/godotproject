@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=31 format=3 uid="uid://beumtr8r151x"]
+[gd_resource type="SpriteFrames" load_steps=32 format=3 uid="uid://beumtr8r151x"]
 
 [ext_resource type="Texture2D" uid="uid://bise7ysec4rwh" path="res://assets/inkdrinker_idle_yellow.png" id="1_4c6lo"]
 [ext_resource type="Texture2D" uid="uid://glsjm46ba1xg" path="res://assets/inkdrinker_move_yellow.png" id="2_3ef0x"]
@@ -34,6 +34,9 @@ region = Rect2(1184, 0, 128, 128)
 [sub_resource type="AtlasTexture" id="AtlasTexture_wdcw7"]
 atlas = ExtResource("1_4c6lo")
 region = Rect2(1376, 0, 128, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wd570"]
+load_path = "res://.godot/imported/90a375fb511aa277dcbdfd9049c74f91.jpg-ed0f572693981f739fa9d21ee741cb4a.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwgah"]
 atlas = ExtResource("1_4c6lo")
@@ -141,6 +144,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wdcw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_wd570")
 }],
 "loop": true,
 "name": &"idle",
